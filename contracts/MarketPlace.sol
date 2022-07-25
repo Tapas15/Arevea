@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 import "./External/Counters.sol";
-import "./External/ERC721URIStorage.sol";
+import "./ERC721URIStorage.sol";
 import "./ERC721.sol";
 
 import "./External/console.sol";
