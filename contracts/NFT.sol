@@ -68,6 +68,9 @@ contract NFT is ERC721 {
     function setBaseURI(string memory _baseURI) external onlyOwner{
         _setBaseURI(_baseURI);
     }
+    function mint(uint256 tokenId, uint256 fee) public onlyOwner {
+        _safeMint(msg.sender, tokenId, fee);
+    }
     
     function burn(uint256 tokenId) external {
         require(_exists(tokenId), "ERC721: nonexistent token");
